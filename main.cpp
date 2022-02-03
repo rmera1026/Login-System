@@ -35,7 +35,8 @@ int main() {
 
     if(password != confirmation) {
       cout << "Passwords do not match!";
-      return 0;
+      main();
+      return 1;
     }
 
     ofstream file;
